@@ -2,15 +2,13 @@
 def main():
     book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
-    #num_words = get_num_words(text)
+    num_words = get_num_words(text)
     #print(f"{num_words} words found in the document")
     #####################################################
     unique = get_txt_unique(text)
     count_unique = get_count_unique(text, unique)
     print(count_unique)
-    
-    
-    
+       
 def get_num_words(text):
     words = text.split()
     return words
@@ -28,7 +26,6 @@ def get_txt_unique(text):
                 unique.add(char)
     return unique
     
-
 def get_count_unique(text, unique):
     output = {}
     lower_txt = text.lower()
