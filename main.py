@@ -6,14 +6,12 @@ def main():
     unique = get_txt_unique(text)
     count_unique = get_count_unique(text, unique)
     sorted_unique = sorted(count_unique.items(), key=get_sort_on, reverse=True)
-    #unique_sentense = get_sentense(sorted_unique)
     print(f"--- Begin report of {book_path} ---")
     print(f"{num_words} words found in the document\n")
     for nam in sorted_unique:
         print (f"The {nam[0]} character was found {nam[1]} times")
     print("--- End report ---")
-    
-      
+     
 def get_num_words(text):
     words = text.split()
     return len(words)
