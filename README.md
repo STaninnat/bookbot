@@ -1,6 +1,6 @@
 # First Project => **Bookbot**
 
-Project for the learn Python course
+Project for learn Python course
 
 Welcome to my first project! 
 I'm going to build "Book Bot" - a Python program that can analyze an entire book and print out an interesting statistical report.
